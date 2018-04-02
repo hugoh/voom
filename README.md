@@ -4,7 +4,7 @@ voom is a simplest-thing-that-works tool to manage your Vim plugins.  It install
 
 It assumes:
 
-- The plugins you use are on GitHub (or in-progress on disk).
+- The plugins you use are on GitHub, cloneable with an http/https URL, or in-progress on disk.
 - You use Vim 8 packages (or [Pathogen][] to manage Vim's runtime path).
 
 voom is an alternative to [vim-plug][], [Vundle][], [NeoBundle][], [vam][], [Vizadry][], etc.
@@ -85,6 +85,10 @@ Here's an example of a manifest:
 
 # Declare repos on GitHub with: username/repo.
 tpope/vim-fugitive
+
+# Declare repos on Gitlab or others with full URL:
+https://github.com/tpope/vim-obsession
+https://gitlab.com/hugoh/vim-auto-obsession
 
 # Declare repos on your file system with the absolute path.
 /Users/andy/code/src/vim-gitgutter
